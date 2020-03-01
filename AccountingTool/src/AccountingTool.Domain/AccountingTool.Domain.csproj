@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="CommandHandler\" />
+    <Folder Include="Domain\Commands\" />
+    <Folder Include="Domain\Errors\" />
+    <Folder Include="Domain\Events\" />
+    <Folder Include="Domain\Validation\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccountingTool.DAL\AccountingTool.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

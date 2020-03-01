@@ -5,8 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CommandHandler\" />
-    <Folder Include="Domain\Commands\" />
     <Folder Include="Domain\Errors\" />
     <Folder Include="Domain\Events\" />
     <Folder Include="Domain\Validation\" />

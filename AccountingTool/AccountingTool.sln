@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountingTool.DAL", "src\A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountingTool.Domain", "src\AccountingTool.Domain\AccountingTool.Domain.csproj", "{F311EC95-4CC1-49B7-B621-251A25E87866}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingTool.Tests", "tests\AccountingTool.Tests\AccountingTool.Tests.csproj", "{EB7F7A7B-B3DB-455A-9001-12C53D97FEF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingTool.Domain.Tests", "tests\AccountingTool.Domain.Tests\AccountingTool.Domain.Tests.csproj", "{7BAEE4FC-9C54-45C4-8EA8-2BDDDA97C917}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingTool.IntegrationTests", "tests\AccountingTool.Tests\AccountingTool.IntegrationTests\AccountingTool.IntegrationTests.csproj", "{80381EE3-E562-4FCC-BA10-EBDBB08753AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingTool.ApiTests", "tests\AccountingTool.ApiTests\AccountingTool.ApiTests.csproj", "{9AFE5A22-7619-43D8-950E-2BD1583FDB51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,10 +61,18 @@ Global
 		{F311EC95-4CC1-49B7-B621-251A25E87866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F311EC95-4CC1-49B7-B621-251A25E87866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F311EC95-4CC1-49B7-B621-251A25E87866}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB7F7A7B-B3DB-455A-9001-12C53D97FEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB7F7A7B-B3DB-455A-9001-12C53D97FEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB7F7A7B-B3DB-455A-9001-12C53D97FEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB7F7A7B-B3DB-455A-9001-12C53D97FEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BAEE4FC-9C54-45C4-8EA8-2BDDDA97C917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BAEE4FC-9C54-45C4-8EA8-2BDDDA97C917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BAEE4FC-9C54-45C4-8EA8-2BDDDA97C917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BAEE4FC-9C54-45C4-8EA8-2BDDDA97C917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80381EE3-E562-4FCC-BA10-EBDBB08753AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80381EE3-E562-4FCC-BA10-EBDBB08753AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80381EE3-E562-4FCC-BA10-EBDBB08753AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80381EE3-E562-4FCC-BA10-EBDBB08753AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AFE5A22-7619-43D8-950E-2BD1583FDB51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFE5A22-7619-43D8-950E-2BD1583FDB51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFE5A22-7619-43D8-950E-2BD1583FDB51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFE5A22-7619-43D8-950E-2BD1583FDB51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,7 +85,9 @@ Global
 		{BC20C464-22AC-4E93-BC61-E02A98FB8F88} = {B46E2437-0232-4F5D-821F-979A55987C75}
 		{7F0A97AE-BE31-462E-B226-C24969C0D622} = {B46E2437-0232-4F5D-821F-979A55987C75}
 		{F311EC95-4CC1-49B7-B621-251A25E87866} = {B46E2437-0232-4F5D-821F-979A55987C75}
-		{EB7F7A7B-B3DB-455A-9001-12C53D97FEF9} = {56DDCD09-567B-4DD6-965F-91ECF1370ED6}
+		{7BAEE4FC-9C54-45C4-8EA8-2BDDDA97C917} = {56DDCD09-567B-4DD6-965F-91ECF1370ED6}
+		{80381EE3-E562-4FCC-BA10-EBDBB08753AC} = {56DDCD09-567B-4DD6-965F-91ECF1370ED6}
+		{9AFE5A22-7619-43D8-950E-2BD1583FDB51} = {56DDCD09-567B-4DD6-965F-91ECF1370ED6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4527823F-00BA-425C-A1E2-35EA5E417C75}

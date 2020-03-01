@@ -9,5 +9,6 @@ namespace AccountingTool.DAL.Repositories.Contracts
     public interface IPositionRepository
     {
         Task<ICollection<PositionDto>> GetAll();
+        Task<PositionDto> Add(PositionCreationDto position);
     }
 }

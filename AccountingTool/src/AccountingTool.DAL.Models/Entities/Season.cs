@@ -4,10 +4,10 @@ using System.Text;
 
 namespace AccountingTool.DAL.Models.Entities
 {
-    public class Position : BaseEntity
+    public class Season : BaseEntity
     {
         public string Name { get; set; }
 
-        public ICollection<Employee> Employees { get; set; }
+        public ICollection<Item> Items { get; set; }
     }
 }

@@ -4,10 +4,10 @@ using System.Text;
 
 namespace AccountingTool.DAL.Models.Entities
 {
-    public class Position : BaseEntity
+    public class WearType : BaseEntity
     {
         public string Name { get; set; }
 
-        public ICollection<Employee> Employees { get; set; }
+        public ICollection<Wear> Wears { get; set; }
     }
 }

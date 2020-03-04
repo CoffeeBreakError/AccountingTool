@@ -1,6 +1,6 @@
 ﻿using AccountingTool.Common;
 using AccountingTool.DAL.DTOs;
-using AccountingTool.Domain.Domain.Commands;
+using AccountingTool.Domain.Domain.Commands.Position;
 using AccountingTool.Domain.Domain.Responses;
 using System;
 using System.Collections.Generic;

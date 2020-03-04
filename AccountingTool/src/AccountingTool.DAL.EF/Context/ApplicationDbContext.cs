@@ -22,6 +22,15 @@ namespace AccountingTool.DAL.EF.Context
         #region DbSets
 
         public DbSet<Position> Positions { get; set; }
+        public DbSet<Wear> Wears { get; set; }
+        public DbSet<WearType> WearTypes { get; set; }
+        public DbSet<WearSize> WearSizes { get; set; }
+        public DbSet<Clothes> Clothes { get; set; }
+        public DbSet<ClothesType> ClothesTypes { get; set; }
+        public DbSet<ClothesSize> ClothesSize { get; set; }
+        public DbSet<Item> Items { get; set; }
+        public DbSet<ItemAccounting> ItemAccountings { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
         #endregion
 
@@ -41,7 +50,7 @@ namespace AccountingTool.DAL.EF.Context
         public override async Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
         {
             OnBeforeSaving();
-            
+
             return await base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
         }
 
@@ -55,7 +64,7 @@ namespace AccountingTool.DAL.EF.Context
             {
                 e.State = EntityState.Unchanged;
                 e.Entity.IsDeleted = true;
-                
+
             });
 
             List<EntityEntry<IBaseEntity>> addedEntities = ChangeTracker.Entries<IBaseEntity>()

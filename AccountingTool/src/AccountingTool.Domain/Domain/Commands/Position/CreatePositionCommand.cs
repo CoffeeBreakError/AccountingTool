@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AccountingTool.Domain.Domain.Commands
+namespace AccountingTool.Domain.Domain.Commands.Position
 {
     public class CreatePositionCommand : IRequest<PositionResponse>
     {

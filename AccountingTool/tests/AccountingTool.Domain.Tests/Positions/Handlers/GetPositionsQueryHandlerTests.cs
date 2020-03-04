@@ -2,7 +2,7 @@
 using AccountingTool.Common.Contracts;
 using AccountingTool.DAL.DTOs;
 using AccountingTool.DAL.Repositories.Contracts;
-using AccountingTool.Domain.Domain.Queries;
+using AccountingTool.Domain.Domain.Queries.Position;
 using AccountingTool.Domain.QueryHandler;
 using Moq;
 using System;

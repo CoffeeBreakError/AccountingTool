@@ -5,7 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Configurations" />
+    <Compile Remove="Migrations\20200304115725_add-relations-1-to-many.cs" />
+    <Compile Remove="Migrations\20200304115725_add-relations-1-to-many.Designer.cs" />
+    <Compile Remove="Migrations\20200304134454_add-relations-fluent-api.cs" />
+    <Compile Remove="Migrations\20200304134454_add-relations-fluent-api.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -2,7 +2,7 @@
 using AccountingTool.DAL.DTOs;
 using AccountingTool.DAL.Models.Entities;
 using AccountingTool.DAL.Repositories.Contracts;
-using AccountingTool.Domain.Domain.Commands;
+using AccountingTool.Domain.Domain.Commands.Position;
 using AccountingTool.Domain.Domain.Responses;
 using MediatR;
 using System;

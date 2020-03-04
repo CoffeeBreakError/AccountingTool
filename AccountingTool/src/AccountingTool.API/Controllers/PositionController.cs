@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AccountingTool.Domain.Domain.Commands;
-using AccountingTool.Domain.Domain.Queries;
+using AccountingTool.Domain.Domain.Commands.Position;
+using AccountingTool.Domain.Domain.Queries.Position;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

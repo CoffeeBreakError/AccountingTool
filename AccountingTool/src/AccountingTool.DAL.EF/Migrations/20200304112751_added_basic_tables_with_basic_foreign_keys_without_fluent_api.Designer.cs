@@ -3,15 +3,17 @@ using System;
 using AccountingTool.DAL.EF.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace AccountingTool.DAL.EF.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200304112751_added_basic_tables_with_basic_foreign_keys_without_fluent_api")]
+    partial class added_basic_tables_with_basic_foreign_keys_without_fluent_api
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -98,40 +100,6 @@ namespace AccountingTool.DAL.EF.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ClothesTypes");
-                });
-
-            modelBuilder.Entity("AccountingTool.DAL.Models.Entities.Employee", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime>("AddedDate")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("text");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("text");
-
-                    b.Property<string>("MiddleName")
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.Property<Guid>("PositionId")
-                        .HasColumnType("uuid");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PositionId");
-
-                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("AccountingTool.DAL.Models.Entities.Item", b =>
@@ -536,15 +504,6 @@ namespace AccountingTool.DAL.EF.Migrations
                     b.HasOne("AccountingTool.DAL.Models.Entities.Item", "Item")
                         .WithMany()
                         .HasForeignKey("ItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("AccountingTool.DAL.Models.Entities.Employee", b =>
-                {
-                    b.HasOne("AccountingTool.DAL.Models.Entities.Position", "Position")
-                        .WithMany()
-                        .HasForeignKey("PositionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

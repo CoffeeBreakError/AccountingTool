@@ -1,7 +1,7 @@
 ﻿using AccountingTool.Common.Contracts;
 using AccountingTool.DAL.DTOs;
 using AccountingTool.DAL.Repositories.Contracts;
-using AccountingTool.Domain.Domain.Queries;
+using AccountingTool.Domain.Domain.Queries.Position;
 using AccountingTool.Domain.Domain.Responses;
 using MediatR;
 using System.Collections.Generic;

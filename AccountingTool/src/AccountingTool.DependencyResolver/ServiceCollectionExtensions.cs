@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Reflection;
 using AccountingTool.Common;
 using AccountingTool.Common.Contracts;
 using AccountingTool.DAL.EF;
@@ -6,15 +8,12 @@ using AccountingTool.DAL.EF.Context;
 using AccountingTool.DAL.Models.Entities;
 using AccountingTool.DAL.Repositories.Contracts;
 using AccountingTool.DAL.Repositories.Implementation;
+using AccountingTool.Domain.QueryHandler;
+using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MediatR;
-using System.Reflection;
-using System.Linq;
-using System.Collections.Generic;
-using AccountingTool.Domain.QueryHandler;
 
 namespace AccountingTool.DependencyResolver
 {
@@ -36,7 +35,7 @@ namespace AccountingTool.DependencyResolver
             services.AddMediatR(assembly);
 
             services.AddScoped<IDataInitializer, EFDataInitializer>();
-            
+
             services.AddScoped(typeof(IAsyncRepository<>), typeof(EFRepositoryAsync<>));
             services.AddScoped<IPositionRepository, PositionRepository>();
 

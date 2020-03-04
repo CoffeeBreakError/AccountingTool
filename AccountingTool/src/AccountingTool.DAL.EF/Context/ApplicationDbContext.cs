@@ -32,6 +32,7 @@ namespace AccountingTool.DAL.EF.Context
         public DbSet<Item> Items { get; set; }
         public DbSet<ItemAccounting> ItemAccountings { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Department> Departments { get; set; }
 
         #endregion
 

@@ -1,14 +1,14 @@
 ﻿using AccountingTool.Common.Contracts;
-using AccountingTool.DAL.DTOs;
+using AccountingTool.DAL.DTOs.Position;
 using AccountingTool.DAL.Repositories.Contracts;
+using AccountingTool.Domain.Domain.Models.Position;
 using AccountingTool.Domain.Domain.Queries.Position;
-using AccountingTool.Domain.Domain.Responses;
 using MediatR;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AccountingTool.Domain.QueryHandler
+namespace AccountingTool.Domain.QueryHandler.Position
 {
     public class GetPositionsQueryHandler : IRequestHandler<GetPositionsQuery, ICollection<PositionResponse>>
     {

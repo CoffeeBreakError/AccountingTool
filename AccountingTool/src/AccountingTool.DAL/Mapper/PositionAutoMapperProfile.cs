@@ -1,5 +1,5 @@
 ﻿using AccountingTool.Common;
-using AccountingTool.DAL.DTOs;
+using AccountingTool.DAL.DTOs.Position;
 using AccountingTool.DAL.Models.Entities;
 using System;
 using System.Collections.Generic;

@@ -8,7 +8,7 @@ using AccountingTool.DAL.EF.Context;
 using AccountingTool.DAL.Models.Entities;
 using AccountingTool.DAL.Repositories.Contracts;
 using AccountingTool.DAL.Repositories.Implementation;
-using AccountingTool.Domain.QueryHandler;
+using AccountingTool.Domain.QueryHandler.Position;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -37,7 +37,9 @@ namespace AccountingTool.DependencyResolver
             services.AddScoped<IDataInitializer, EFDataInitializer>();
 
             services.AddScoped(typeof(IAsyncRepository<>), typeof(EFRepositoryAsync<>));
+
             services.AddScoped<IPositionRepository, PositionRepository>();
+            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 
             services.AddSingleton<IMapper, AccountingToolAutoMapper>();
         }

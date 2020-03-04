@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AccountingTool.DAL.DTOs
+namespace AccountingTool.DAL.DTOs.Position
 {
-    public class PositionDto
+    public class PositionCreationDto
     {
-        public Guid Id { get; set; }
         public string Name { get; set; }
     }
 }

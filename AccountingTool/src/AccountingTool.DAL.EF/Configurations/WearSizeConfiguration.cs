@@ -13,7 +13,7 @@ namespace AccountingTool.DAL.EF.Configurations
         {
             builder.HasKey(c => c.Id);
 
-            builder.HasMany(c => c.Wears)
+            builder.HasMany(c => c.WearProportions)
                 .WithOne(c => c.WearSize)
                 .HasForeignKey(c => c.WearSizeId);
         }

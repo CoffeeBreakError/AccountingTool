@@ -40,6 +40,7 @@ namespace AccountingTool.DependencyResolver
 
             services.AddScoped<IPositionRepository, PositionRepository>();
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            services.AddScoped<IWearSizeRepository, WearSizeRepository>();
 
             services.AddSingleton<IMapper, AccountingToolAutoMapper>();
         }

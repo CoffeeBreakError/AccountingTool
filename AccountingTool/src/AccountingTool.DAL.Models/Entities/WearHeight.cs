@@ -4,9 +4,9 @@ using System.Text;
 
 namespace AccountingTool.DAL.Models.Entities
 {
-    public class WearSize : BaseEntity
+    public class WearHeight : BaseEntity
     {
-        public string Size { get; set; }
+        public string Height { get; set; }
 
         public ICollection<WearProportion> WearProportions { get; set; }
     }

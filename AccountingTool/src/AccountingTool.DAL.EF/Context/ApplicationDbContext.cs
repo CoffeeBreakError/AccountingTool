@@ -25,7 +25,9 @@ namespace AccountingTool.DAL.EF.Context
         public DbSet<Position> Positions { get; set; }
         public DbSet<Wear> Wears { get; set; }
         public DbSet<WearType> WearTypes { get; set; }
+        public DbSet<WearProportion> WearProportions { get; set; }
         public DbSet<WearSize> WearSizes { get; set; }
+        public DbSet<WearHeight> WearHeights { get; set; }
         public DbSet<Clothes> Clothes { get; set; }
         public DbSet<ClothesType> ClothesTypes { get; set; }
         public DbSet<ClothesSize> ClothesSize { get; set; }
@@ -35,7 +37,6 @@ namespace AccountingTool.DAL.EF.Context
         public DbSet<Department> Departments { get; set; }
 
         #endregion
-
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

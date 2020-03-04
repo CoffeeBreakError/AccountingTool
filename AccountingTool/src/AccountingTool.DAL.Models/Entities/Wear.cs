@@ -11,6 +11,6 @@ namespace AccountingTool.DAL.Models.Entities
         public Item Item { get; set; }
 
         public Guid WearSizeId { get; set; }
-        public WearSize WearSize { get; set; }
+        public WearProportion WearSize { get; set; }
     }
 }

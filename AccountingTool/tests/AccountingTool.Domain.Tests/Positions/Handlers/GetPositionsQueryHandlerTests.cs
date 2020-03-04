@@ -1,9 +1,9 @@
 ﻿using AccountingTool.Common;
 using AccountingTool.Common.Contracts;
-using AccountingTool.DAL.DTOs;
+using AccountingTool.DAL.DTOs.Position;
 using AccountingTool.DAL.Repositories.Contracts;
 using AccountingTool.Domain.Domain.Queries.Position;
-using AccountingTool.Domain.QueryHandler;
+using AccountingTool.Domain.QueryHandler.Position;
 using Moq;
 using System;
 using System.Collections.Generic;

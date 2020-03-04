@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AccountingTool.Domain.Domain.Responses
+namespace AccountingTool.Domain.Domain.Models.Department
 {
-    public class PositionResponse
+    public class DepartmentResponse
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

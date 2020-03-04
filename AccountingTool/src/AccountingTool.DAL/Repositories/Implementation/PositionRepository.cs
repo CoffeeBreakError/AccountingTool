@@ -1,5 +1,5 @@
 ﻿using AccountingTool.Common.Contracts;
-using AccountingTool.DAL.DTOs;
+using AccountingTool.DAL.DTOs.Position;
 using AccountingTool.DAL.EF.Context;
 using AccountingTool.DAL.Models.Entities;
 using AccountingTool.DAL.Repositories.Contracts;

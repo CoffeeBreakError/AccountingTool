@@ -1,4 +1,4 @@
-﻿using AccountingTool.DAL.DTOs;
+﻿using AccountingTool.DAL.DTOs.Position;
 using System;
 using System.Collections.Generic;
 using System.Text;

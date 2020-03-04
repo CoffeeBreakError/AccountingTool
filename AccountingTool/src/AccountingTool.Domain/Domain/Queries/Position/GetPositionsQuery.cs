@@ -1,4 +1,4 @@
-﻿using AccountingTool.Domain.Domain.Responses;
+﻿using AccountingTool.Domain.Domain.Models.Position;
 using MediatR;
 using System;
 using System.Collections.Generic;

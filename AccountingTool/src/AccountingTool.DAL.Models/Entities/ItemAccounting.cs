@@ -10,5 +10,8 @@ namespace AccountingTool.DAL.Models.Entities
 
         public Guid ItemId { get; set; }
         public Item Item { get; set; }
+
+        public Guid? EmployeeId { get; set; }
+        public Employee Employee { get; set; }
     }
 }

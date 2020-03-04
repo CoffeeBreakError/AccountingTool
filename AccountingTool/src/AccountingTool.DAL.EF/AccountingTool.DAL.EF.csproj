@@ -9,6 +9,30 @@
     <Compile Remove="Migrations\20200304115725_add-relations-1-to-many.Designer.cs" />
     <Compile Remove="Migrations\20200304134454_add-relations-fluent-api.cs" />
     <Compile Remove="Migrations\20200304134454_add-relations-fluent-api.Designer.cs" />
+    <Compile Remove="Migrations\20200304141643_add-department.cs" />
+    <Compile Remove="Migrations\20200304141643_add-department.Designer.cs" />
+    <Compile Remove="Migrations\20200304142308_add-department.cs" />
+    <Compile Remove="Migrations\20200304142308_add-department.Designer.cs" />
+    <Compile Remove="Migrations\20200304144224_add-department.cs" />
+    <Compile Remove="Migrations\20200304144224_add-department.Designer.cs" />
+    <Compile Remove="Migrations\20200304144823_add-department.cs" />
+    <Compile Remove="Migrations\20200304144823_add-department.Designer.cs" />
+    <Compile Remove="Migrations\20200304145003_add-department.cs" />
+    <Compile Remove="Migrations\20200304145003_add-department.Designer.cs" />
+    <Compile Remove="Migrations\20200304145315_add-identity-key-to-all-tables.cs" />
+    <Compile Remove="Migrations\20200304145315_add-identity-key-to-all-tables.Designer.cs" />
+    <Compile Remove="Migrations\20200304145954_add-identity-columns-to-all-tables.cs" />
+    <Compile Remove="Migrations\20200304145954_add-identity-columns-to-all-tables.Designer.cs" />
+    <Compile Remove="Migrations\20200304150106_add-identity-columns-to-all-tables.cs" />
+    <Compile Remove="Migrations\20200304150106_add-identity-columns-to-all-tables.Designer.cs" />
+    <Compile Remove="Migrations\20200304151319_identity-to-department.cs" />
+    <Compile Remove="Migrations\20200304151319_identity-to-department.Designer.cs" />
+    <Compile Remove="Migrations\20200304151854_add-department.cs" />
+    <Compile Remove="Migrations\20200304151854_add-department.Designer.cs" />
+    <Compile Remove="Migrations\20200304152448_add-department.cs" />
+    <Compile Remove="Migrations\20200304152448_add-department.Designer.cs" />
+    <Compile Remove="Migrations\20200304174339_added-relations-itemAccounting-with-Employee.cs" />
+    <Compile Remove="Migrations\20200304174339_added-relations-itemAccounting-with-Employee.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

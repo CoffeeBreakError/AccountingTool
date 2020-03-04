@@ -3,15 +3,17 @@ using System;
 using AccountingTool.DAL.EF.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace AccountingTool.DAL.EF.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200304152610_add-department")]
+    partial class adddepartment
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -196,9 +198,6 @@ namespace AccountingTool.DAL.EF.Migrations
                     b.Property<DateTime>("DateOfIssue")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<Guid?>("EmployeeId")
-                        .HasColumnType("uuid");
-
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
@@ -209,8 +208,6 @@ namespace AccountingTool.DAL.EF.Migrations
                         .HasColumnType("timestamp without time zone");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("EmployeeId");
 
                     b.HasIndex("ItemId");
 
@@ -594,10 +591,6 @@ namespace AccountingTool.DAL.EF.Migrations
 
             modelBuilder.Entity("AccountingTool.DAL.Models.Entities.ItemAccounting", b =>
                 {
-                    b.HasOne("AccountingTool.DAL.Models.Entities.Employee", "Employee")
-                        .WithMany("ItemAccountings")
-                        .HasForeignKey("EmployeeId");
-
                     b.HasOne("AccountingTool.DAL.Models.Entities.Item", "Item")
                         .WithMany("ItemAccountings")
                         .HasForeignKey("ItemId")

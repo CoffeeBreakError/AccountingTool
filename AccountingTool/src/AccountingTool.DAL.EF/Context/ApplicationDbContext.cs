@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using AccountingTool.DAL.EF.Configurations;
 using AccountingTool.DAL.Models;
 using AccountingTool.DAL.Models.Entities;
 using Microsoft.AspNetCore.Identity;
@@ -37,6 +38,8 @@ namespace AccountingTool.DAL.EF.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(WearConfiguration).Assembly);
+
             base.OnModelCreating(modelBuilder);
         }
 

@@ -16,6 +16,10 @@ namespace AccountingTool.DAL.EF.Configurations
             builder.HasOne(c => c.Item)
                 .WithMany(c => c.ItemAccountings)
                 .HasForeignKey(c => c.ItemId);
+
+            builder.HasOne(c => c.Employee)
+                .WithMany(c => c.ItemAccountings)
+                .HasForeignKey(c => c.EmployeeId);
         }
     }
 }
